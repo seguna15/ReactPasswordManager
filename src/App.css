@@ -1,0 +1,262 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  width: 60%;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar > .nav-group{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar  .nav-group-item{
+  font-size: 25px;
+}
+
+.nav-group-item > .nav-link{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-group-item > .nav-link:hover{
+  text-decoration: underline;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.page-title{
+  color: whitesmoke;
+}
+
+.AddingPassword{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  width: 60%;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.AddingPassword button, .AddingPassword input{
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  margin: 10px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.Passwords {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.password {
+  width: 400px;
+  height: 70px;
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.wrapper {
+  background-color: #201f1f;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+div#root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper-box {
+  padding: 30px;
+}
+
+.word-crieteria__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.generate-button {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(48, 226, 12, 0.747);
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.password-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-box > input[type='text'] {
+  width: 70%;
+  height: 35px;
+  margin-right: 10px;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+button.copy-button {
+  display: block;
+  width: 25%;
+  cursor: pointer;
+  border: 0px;
+  font-size: 14px;
+  font-weight: bolder;
+  border-radius: 5px;
+  background-color: rgba(48, 226, 12, 0.747);
+}
+
+.word-crieteria__box input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.word-crieteria__box label {
+  font-weight: 500;
+}
+
+input[type='number'] {
+  width: 60px;
+  height: 20px;
+}
+
+
+.label-password {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+  color: #727272;
+}
+
+.input-password {
+  display: block;
+  text-transform: none;
+  width: 100%;
+  height: 40px;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #b6b6b6;
+  font-weight: 600;
+  font-size: 16px;
+  color: #212121;
+}
+
+.input-password:focus,
+.input-password:active {
+  border-color: #00bcd4;
+  outline: 0;
+}
+
+.show-password {
+  cursor: pointer;
+  position: absolute;
+  bottom: 11px;
+  height: 16px;
+  right: 0;
+  background: #727272;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+.strength-password {
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  bottom: -8px;
+  left: 0;
+  background: transparent;
+  transition: all 300ms ease-in-out;
+}
+
+.strength-password[data-score="null"] {
+  width: 0;
+  background: red;
+}
+
+.strength-password[data-score="0"] {
+  width: 5%;
+  background: #f44336;
+}
+
+.strength-password[data-score="1"] {
+  width: 25%;
+  background: #f44336;
+}
+
+.strength-password[data-score="2"] {
+  width: 50%;
+  background: #ffeb3b;
+}
+
+.strength-password[data-score="3"] {
+  width: 75%;
+  background: #4caf50;
+}
+
+.strength-password[data-score="4"] {
+  width: 100%;
+  background: #4caf50;
+}
