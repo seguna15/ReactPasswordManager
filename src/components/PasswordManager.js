@@ -20,7 +20,7 @@ function PasswordManager() {
       password: password,
       title: title,
     });
-    window.location.reload(false);
+    //window.location.reload(false);
   };
 
   const decryptPassword = (encryption) => {
