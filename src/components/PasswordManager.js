@@ -20,7 +20,7 @@ function PasswordManager() {
       password: password,
       title: title,
     });
-    //window.location.reload(false);
+   // window.location.reload(false);
   };
 
   const decryptPassword = (encryption) => {
@@ -30,9 +30,9 @@ function PasswordManager() {
     }).then((response) => {
       setPasswordList(
         passwordList.map((val) => {
-          return val.id == encryption.id
+          return val.slug == encryption.slug
             ? {
-                id: val.id,
+                slug: val.slug,
                 password: val.password,
                 title: response.data,
                 iv: val.iv,
@@ -72,7 +72,7 @@ function PasswordManager() {
                 decryptPassword({
                   password: val.password,
                   iv: val.iv,
-                  id: val.id,
+                  slug: val.slug,
                 });
               }}
               key={key}
